@@ -1,0 +1,17 @@
+prefix_name,prefix_desc,prefix_bonus
+Balanced,+8% when playing a Universal Hero,8
+Bestial,+17% if playing a hero with Horns or Wings,17
+Brawny,+13% when playing a Strength Hero,13
+Canny,+21% when playing an Intelligence Hero,21
+Cerulean,+22% when playing a Blue Hero,22
+Clutch,+17% when playing the last possible match of a series,17
+Coveted,+19% when that player's hero is chosen last,19
+Crimson,+6% when playing a Red Hero,6
+Dashing,+16% when playing an Agility Hero,16
+Elemental,"+16% when playing an Aquatic, Fiery, or Icy Hero",16
+Emerald,+22% when playing a Green Hero,22
+Glamorous,+25% when the player has an Arcana equipped,25
+Hirsute,+12% when playing a Bearded or Fuzzy Hero,12
+Otherworldly,"+24% when playing an Undead, Demon, or Spirit Hero",24
+Sacrificial,+19% when that player's hero is chosen first,19
+Virtuoso,+22% when playing a hero they are a Master or Grandmaster with,22
