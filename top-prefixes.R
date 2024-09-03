@@ -77,7 +77,7 @@ for (match in matches_odota) {
       )
       
       # Balanced
-      ## +13% when playing a Universal Hero
+      ## +8% when playing a Universal Hero
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -87,7 +87,7 @@ for (match in matches_odota) {
         )
       
       # Bestial
-      ## +20% if playing a hero with Horns or Wings
+      ## +17% if playing a hero with Horns or Wings
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -107,7 +107,7 @@ for (match in matches_odota) {
         )
       
       # Canny
-      ## +13% when playing an Intelligence Hero
+      ## +21% when playing an Intelligence Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -117,7 +117,7 @@ for (match in matches_odota) {
         )
       
       # Cerulean
-      ## +20% when playing a Blue Hero
+      ## +22% when playing a Blue Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -127,7 +127,7 @@ for (match in matches_odota) {
         )
       
       # Clutch
-      ## +17% when playing the last possible match of a series
+      ## +10% when playing the last possible match of a series
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -136,7 +136,7 @@ for (match in matches_odota) {
         )
       
       # Coveted
-      ## +10% when that player's hero is chosen last
+      ## +19% when that player's hero is chosen last
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -152,7 +152,7 @@ for (match in matches_odota) {
         )
       
       # Crimson
-      ## +19% when playing a Red Hero
+      ## +6% when playing a Red Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -162,7 +162,7 @@ for (match in matches_odota) {
         )
       
       # Dashing
-      ## +13% when playing an Agility Hero
+      ## +16% when playing an Agility Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -172,7 +172,7 @@ for (match in matches_odota) {
         )
       
       # Elemental
-      ## +20% when playing an Aquatic, Fiery, or Icy Hero
+      ## +16% when playing an Aquatic, Fiery, or Icy Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -192,7 +192,7 @@ for (match in matches_odota) {
         )
       
       # Glamorous
-      ## +22% when the player has an Arcana equipped
+      ## +25% when the player has an Arcana equipped
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -220,7 +220,7 @@ for (match in matches_odota) {
         )
       
       # Hirsute
-      ## +15% when playing a Bearded or Fuzzy Hero
+      ## +12% when playing a Bearded or Fuzzy Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -230,7 +230,7 @@ for (match in matches_odota) {
         )
       
       # Otherworldly
-      ## +19% when playing an Undead, Demon, or Spirit Hero
+      ## +24% when playing an Undead, Demon, or Spirit Hero
       prefix_incids <- prefix_incids %>% 
         add_row(
           !!!base_row,
@@ -240,7 +240,7 @@ for (match in matches_odota) {
         )
       
       # Sacrificial
-      ## +20% when that player's hero is chosen first
+      ## +19% when that player's hero is chosen first
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,
@@ -272,7 +272,7 @@ for (match in matches_stratz) {
       )
       
       # Virtuoso
-      ## +18% when playing a hero they are a Master or Grandmaster with
+      ## +22% when playing a hero they are a Master or Grandmaster with
       prefix_incids <- prefix_incids %>%
         add_row(
           !!!base_row,

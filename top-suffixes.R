@@ -60,7 +60,7 @@ for (match in matches_odota) {
       )
       
       # the Accomplice
-      ## +10% in games where the player has the most assists
+      ## +16% in games where the player has the most assists
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -75,7 +75,7 @@ for (match in matches_odota) {
         )
       
       # of the Ant
-      ## +16% in games where the player has the lowest networth
+      ## +17% in games where the player has the lowest networth
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -90,7 +90,7 @@ for (match in matches_odota) {
         )
       
       # of the Bull
-      ## +20% in games where the player buys back before 30 minutes
+      ## +21% in games where the player buys back before 30 minutes
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -104,7 +104,7 @@ for (match in matches_odota) {
         )
       
       # the Decisive
-      ## +20% in games that last less than 25 minutes
+      ## +21% in games that last less than 25 minutes
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -113,7 +113,7 @@ for (match in matches_odota) {
         )
       
       # the Divine Thief
-      ## +25% in games where any player steals a Divine Rapier
+      ## +23% in games where any player steals a Divine Rapier
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -130,7 +130,7 @@ for (match in matches_odota) {
         )
       
       # the Flayed Twins Acolyte
-      ## +15% if any player gets first blood before the starting horn
+      ## +5% if any player gets first blood before the starting horn
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -139,7 +139,7 @@ for (match in matches_odota) {
         )
       
       # the Loquacious
-      ## +10% in games where the player uses the most voice lines
+      ## +16% in games where the player uses the most voice lines
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -148,7 +148,7 @@ for (match in matches_odota) {
         )
       
       # of the Mule
-      ## +20% in games where the player ends the game with items in every slot 
+      ## +24% in games where the player ends the game with items in every slot 
       ## of their inventory and backpack
       suffix_incids <- suffix_incids %>% 
         add_row(
@@ -161,7 +161,7 @@ for (match in matches_odota) {
         )
       
       # the Nothl Pilgrim
-      ## +16% if the player has the most deaths in the game
+      ## +15% if the player has the most deaths in the game
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -176,7 +176,7 @@ for (match in matches_odota) {
         )
       
       # of the Octopus
-      ## +15% in games where the player ends the game with 4 or more items that  
+      ## +10% in games where the player ends the game with 4 or more items that  
       ## have an active ability
       suffix_incids <- suffix_incids %>% 
         add_row(
@@ -199,7 +199,7 @@ for (match in matches_odota) {
         )
       
       # the Pacifist
-      ## +16% if the player ends the game with no kills
+      ## +18% if the player ends the game with no kills
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -208,7 +208,7 @@ for (match in matches_odota) {
         )
       
       # the Patient
-      ## +20% if first blood does not happen until after 10 minutes
+      ## +22% if first blood does not happen until after 10 minutes
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -217,7 +217,7 @@ for (match in matches_odota) {
         )
       
       # of the Raven
-      ## +25% if any player gets a rampage
+      ## +23% if any player gets a rampage
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -232,7 +232,7 @@ for (match in matches_odota) {
         )
       
       # the Tormented
-      ## +25% if any player dies to a Tormentor
+      ## +20% if any player dies to a Tormentor
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,
@@ -251,7 +251,7 @@ for (match in matches_odota) {
         )
       
       # the Underdog
-      ## +15% in games where the player loses
+      ## +8% in games where the player loses
       suffix_incids <- suffix_incids %>% 
         add_row(
           !!!base_row,

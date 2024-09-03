@@ -1,5 +1,5 @@
 suffix_name,suffix_desc,suffix_bonus
-the Accomplice,+10% in games where the player has the most assists,10
+the Accomplice,+16% in games where the player has the most assists,16
 of the Ant,+17% in games where the player has the lowest networth,17
 of the Bull,+21% in games where the player buys back before 30 minutes,21
 the Decisive,+21% in games that last less than 25 minutes,21
@@ -14,4 +14,4 @@ the Pacifist,+18% if the player ends the game with no kills,18
 the Patient,+22% if first blood does not happen until after 10 minutes,22
 of the Raven,+23% if any player gets a rampage,23
 the Tormented,+20% if any player dies to a Tormentor,20
-the Underdog,+15% in games where the player loses,15
+the Underdog,+8% in games where the player loses,8
