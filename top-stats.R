@@ -313,7 +313,7 @@ top_cores <- bind_rows(
   fantasy_sums %>% 
     filter(player_role == "Core", emblem_colour == "Green") %>%
     group_by(player_id) %>%
-    slice_max(order_by = average, n = 1) %>%
+    slice_max(order_by = average, n = 2) %>%
     ungroup()
 ) %>%
   group_by(player_id, player_role) %>%
@@ -328,7 +328,7 @@ top_mids <- bind_rows(
   fantasy_sums %>% 
     filter(player_role == "Mid", emblem_colour == "Red") %>%
     group_by(player_id) %>%
-    slice_max(order_by = average, n = 1) %>%
+    slice_max(order_by = average, n = 2) %>%
     ungroup(),
   fantasy_sums %>% 
     filter(player_role == "Mid", emblem_colour == "Blue") %>%
@@ -358,7 +358,7 @@ top_supps <- bind_rows(
   fantasy_sums %>% 
     filter(player_role == "Support", emblem_colour == "Green") %>%
     group_by(player_id) %>%
-    slice_max(order_by = average, n = 1) %>%
+    slice_max(order_by = average, n = 2) %>%
     ungroup()
 ) %>%
   group_by(player_id, player_role) %>%
