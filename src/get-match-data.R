@@ -166,6 +166,18 @@ get_match_stratz_data <- function(match_ids, token = NULL) {
                 dotaPlus {
                   level
                 }
+                playbackData {
+                  runeEvents {
+                    time
+                    rune
+                    action
+                  }
+                  killEvents {
+                    time
+                    isSmoke
+                    isRuneEffected
+                  }
+                }
               }
             }
           }"),
