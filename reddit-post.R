@@ -7,8 +7,9 @@ top_stats <- read_csv("results/top_stats.csv")
 top_prefixes <- read_csv("results/top_prefixes.csv")
 top_suffixes <- read_csv("results/top_suffixes.csv")
 
-# Top player tables
+
 for (role in unique(top_players$player_role)) {
+  # Top player tables
   top_players %>%
     filter(player_role == role) %>%
     mutate(points = paste0(round(average), " (±", round(stddev), ")")) %>%
@@ -24,10 +25,8 @@ for (role in unique(top_players$player_role)) {
       )
     ) %>%
     print()
-}
-
-# Top stat tables
-for (role in unique(top_stats$player_role)) {
+  
+  # Top stat tables
   top_stats %>%
     filter(player_role == role) %>%
     mutate(
@@ -56,10 +55,8 @@ for (role in unique(top_stats$player_role)) {
       )
     ) %>%
     print()
-}
-
-# Top prefix tables
-for (role in unique(top_prefixes$player_role)) {
+  
+  # Top prefix tables
   top_prefixes %>%
     filter(player_role == role) %>%
     mutate(
@@ -88,10 +85,8 @@ for (role in unique(top_prefixes$player_role)) {
       )
     ) %>%
     print()
-}
-
-# Top suffix tables
-for (role in unique(top_suffixes$player_role)) {
+  
+  # Top suffix tables
   top_suffixes %>%
     filter(player_role == role) %>%
     mutate(
