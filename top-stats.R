@@ -5,6 +5,7 @@ source("src/get-match-data.R")
 source("src/calc-exp-summary.R")
 
 library(tidyverse)
+library(progress)
 library(googlesheets4)
 
 # Get data
@@ -32,9 +33,15 @@ fantasy_points <- data.frame(
   points = as.numeric()
 )
 
-i <- 1
+progress <- progress_bar$new(
+  format = "(:spin) [:bar] :percent | ETA:eta",
+  total = length(match_ids),
+  complete = "=",
+  incomplete = "-",
+  current = ">",
+  clear = FALSE
+)
 for (match_id in match_ids) {
-  print(i)
   odota_data <- matches_odota[[as.character(match_id)]]
   replay_data <- matches_replay[[as.character(match_id)]]
   
@@ -245,7 +252,7 @@ for (match_id in match_ids) {
     }
   }
   
-  i <- i + 1
+  progress$tick()
   rm(match_id, player_id, odota_data, replay_data, base_row)
 }
 

@@ -5,6 +5,7 @@ source("src/get-item-data.R")
 source("src/calc-exp-summary.R")
 
 library(tidyverse)
+library(progress)
 library(googlesheets4)
 
 # Get data
@@ -33,9 +34,15 @@ suffix_incids <- data.frame(
   cond = as.logical()
 )
 
-i <- 1
+progress <- progress_bar$new(
+  format = "(:spin) [:bar] :percent | ETA:eta",
+  total = length(match_ids),
+  complete = "=",
+  incomplete = "-",
+  current = ">",
+  clear = FALSE
+)
 for (match in matches_odota) {
-  print(i)
   max_voicelines <- match$chat %>% 
     bind_rows() %>%
     filter(slot < 10) %>%
@@ -261,13 +268,19 @@ for (match in matches_odota) {
     }
   }
   
-  i <- i + 1
+  progress$tick()
   rm(match, player, max_voicelines, base_row)
 }
 
-i <- 1
+progress <- progress_bar$new(
+  format = "(:spin) [:bar] :percent | ETA:eta",
+  total = length(match_ids),
+  complete = "=",
+  incomplete = "-",
+  current = ">",
+  clear = FALSE
+)
 for (match in matches_stratz) {
-  print(i)
   tips <- if (length(match$match$chatEvents) == 0) {
     NULL
   } else {
@@ -302,7 +315,7 @@ for (match in matches_stratz) {
     }
   }
   
-  i <- i + 1
+  progress$tick()
   rm(match, player, base_row)
 }
 
