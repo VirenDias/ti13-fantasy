@@ -4,6 +4,7 @@ source("src/get-hero-data.R")
 source("src/calc-exp-summary.R")
 
 library(tidyverse)
+library(knitr)
 
 # Get data
 teams_elim <- scan("data/teams_elim.csv", quiet = TRUE)
@@ -19,9 +20,9 @@ match_ids <- setdiff(match_ids, match_ids_black)
 matches_odota <- get_match_odota_data(match_ids)
 matches_stratz <- get_match_stratz_data(match_ids)
 
-# Calculate bingo card stats
+# Calculate bingo square stats
 bingo_stats <- data.frame(
-  card = as.character(),
+  square = as.character(),
   description = as.character(),
   probability = as.numeric(),
   requirement = as.numeric()
@@ -47,40 +48,64 @@ kill_streak <- function(matches, streak, threshold) {
 }
 
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Divine Intervention",
-  description = "At least 2 Godlike streaks in a match",
-  probability = kill_streak(matches_odota, 9, 2),
-  requirement = 8
+  square = "Divine Intervention",
+  description = "At least 1 Godlike kill streak in a match",
+  probability = kill_streak(matches_odota, 9, 1),
+  requirement = 29
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Divine Retribution",
+  square = "Divine Intervention",
+  description = "At least 2 Godlike kill streaks in a match",
+  probability = kill_streak(matches_odota, 9, 2),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Divine Retribution",
   description = "A player achieves a Beyond Godlike kill streak in a match",
   probability = kill_streak(matches_odota, 10, 1),
-  requirement = 45
+  requirement = 21
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Mega Mega Kill",
+  square = "Mega Mega Kill",
   description = "At least 4 Mega kill streaks in a match",
   probability = kill_streak(matches_odota, 5, 4),
-  requirement = 25
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Something Wicked",
+  square = "Monstrous Mayhem",
+  description = "At least 1 Monster kill streak in a match",
+  probability = kill_streak(matches_odota, 8, 1),
+  requirement = 36
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Monstrous Mayhem",
+  description = "At least 2 Monster kill streaks in a match",
+  probability = kill_streak(matches_odota, 8, 2),
+  requirement = 10
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Something Wicked",
+  description = "At least 2 Wicked Sick kill streaks in a match",
+  probability = kill_streak(matches_odota, 7, 2),
+  requirement = 21
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Something Wicked",
   description = "At least 3 Wicked Sick kill streaks in a match",
   probability = kill_streak(matches_odota, 7, 3),
-  requirement = 7
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Truly Unstoppable",
+  square = "Truly Unstoppable",
   description = "At least 4 Unstoppable kill streaks in a match",
   probability = kill_streak(matches_odota, 6, 4),
-  requirement = 5
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Truly Unstoppable",
+  square = "Truly Unstoppable",
   description = "At least 3 Unstoppable kill streaks in a match",
   probability = kill_streak(matches_odota, 6, 3),
-  requirement = 21
+  requirement = 11
 )
 
 # Calculate multi kill related stats
@@ -103,10 +128,10 @@ multi_kill <- function(matches, multi, threshold) {
 }
 
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Ultra Cool",
+  square = "Ultra Cool",
   description = "At least 1 Ultra kill occurs in a match",
   probability = multi_kill(matches_odota, 4, 1),
-  requirement = 16
+  requirement = 7
 )
 
 # Calculate item purchase related stats
@@ -126,22 +151,28 @@ item_purchase <- function(matches, item, threshold) {
 }
 
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Blink and You'll Miss It",
+  square = "Blink and You'll Miss It",
   description = "At least 5 blink daggers are purchased in a single match",
   probability = item_purchase(matches_odota, "blink", 5),
-  requirement = 11
+  requirement = 7
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Dagon Enthusiast",
+  square = "Dagon Enthusiast",
   description = "Dagon Level 5 is purchased in a match",
   probability = item_purchase(matches_odota, "dagon_5", 1),
-  requirement = 12
+  requirement = 6
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Kingmaker",
+  square = "Kingmaker",
   description = "At least 3 BKBs are purchased in a match",
   probability = item_purchase(matches_odota, "black_king_bar", 3),
-  requirement = 47
+  requirement = 27
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Kingmaker",
+  description = "At least 5 BKBs are purchased in a match",
+  probability = item_purchase(matches_odota, "black_king_bar", 5),
+  requirement = 6
 )
 
 # Calculate hero pick related stats
@@ -182,82 +213,106 @@ hero_pick <- function(matches, heroes, category, threshold, upper_lower) {
 }
 
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Caped Crew",
+  square = "Caped Crew",
   description = "Team has at least 2 caped heroes",
   probability = hero_pick(matches_odota, heroes, "caped_crew", 2, "lower"),
-  requirement = 52
+  requirement = 24
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Caped Crew",
+  square = "Caped Crew",
   description = "Team has at least 3 caped heroes",
   probability = hero_pick(matches_odota, heroes, "caped_crew", 3, "lower"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Flock Jocks",
+  description = "Team has at least 2 heroes with wings",
+  probability = hero_pick(matches_odota, heroes, "flock_jocks", 2, "lower"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Friendly Fire",
+  description = "Team has at least 2 fiery heroes",
+  probability = hero_pick(matches_odota, heroes, "friendly_fire", 2, "lower"),
+  requirement = 18
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Fuzzy Wuzzy",
+  description = "Team has at least 2 fuzzy heroes",
+  probability = hero_pick(matches_odota, heroes, "fuzzy_wuzzy", 2, "lower"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Girl Power",
+  description = "Team has at least 2 female heroes",
+  probability = hero_pick(matches_odota, heroes, "girl_power", 2, "lower"),
+  requirement = 27
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Girl Power",
+  description = "Team has at least 3 female heroes",
+  probability = hero_pick(matches_odota, heroes, "girl_power", 3, "lower"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Gruesome Grills",
+  description = "Team has at least 2 heroes with bad teeth",
+  probability = hero_pick(matches_odota, heroes, "gruesome_grills", 2, "lower"),
+  requirement = 6
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Gym Rats",
+  description = "Team has at least 2 heroes that have nice pecs",
+  probability = hero_pick(matches_odota, heroes, "gym_rats", 2, "lower"),
+  requirement = 12
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "High Flyers",
+  description = "Team has at least 2 flying heroes",
+  probability = hero_pick(matches_odota, heroes, "high_flyers", 2, "lower"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Huggable Heroes",
+  description = "Team has at least 2 cute heroes",
+  probability = hero_pick(matches_odota, heroes, "huggable_heroes", 2, "lower"),
   requirement = 8
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Flock Jocks",
-  description = "Team has at least 2 heroes with wings",
-  probability = hero_pick(matches_odota, heroes, "flock_jocks", 2, "lower"),
-  requirement = 23
+  square = "Legged Legion",
+  description = "A team has at least 14 legs",
+  probability = hero_pick(matches_odota, heroes, "legs", 14, "lower"),
+  requirement = 17
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Friendly Fire",
-  description = "Team has at least 2 fiery heroes",
-  probability = hero_pick(matches_odota, heroes, "friendly_fire", 2, "lower"),
-  requirement = 36
+  square = "Lock Horns",
+  description = "Team has at least 2 horned heroes",
+  probability = hero_pick(matches_odota, heroes, "lock_horns", 2, "lower"),
+  requirement = 6
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Fuzzy Wuzzy",
-  description = "Team has at least 2 fuzzy heroes",
-  probability = hero_pick(matches_odota, heroes, "fuzzy_wuzzy", 2, "lower"),
-  requirement = 19
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "Girl Power",
-  description = "Team has at least 3 female heroes",
-  probability = hero_pick(matches_odota, heroes, "girl_power", 3, "lower"),
-  requirement = 11
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "Gym Rats",
-  description = "Team has at least 2 heroes that have nice pecs",
-  probability = hero_pick(matches_odota, heroes, "gym_rats", 2, "lower"),
-  requirement = 26
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "High Flyers",
-  description = "Team has at least 2 flying heroes",
-  probability = hero_pick(matches_odota, heroes, "high_flyers", 2, "lower"),
-  requirement = 41
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "No Leg Strategy",
+  square = "No Leg Strategy",
   description = "Team has at most 6 legs",
-  probability = hero_pick(matches_odota, heroes, "no_leg_strategy", 6, "upper"),
+  probability = hero_pick(matches_odota, heroes, "legs", 6, "upper"),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Parental Unit",
+  description = "Team has at least 2 heroes that are parents",
+  probability = hero_pick(matches_odota, heroes, "parental_unit", 2, "lower"),
+  requirement = 5
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Spider Bitten",
+  description = "Team has at least 2 heroes that are arachnophobic",
+  probability = hero_pick(matches_odota, heroes, "spider_bitten", 2, "lower"),
   requirement = 9
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Lock Horns",
-  description = "Team has at least 2 horned heroes",
-  probability = hero_pick(matches_odota, heroes, "lock_horns", 2, "lower"),
-  requirement = 13
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "Parental Unit",
-  description = "Team has at least 2 heroes that are parents",
-  probability = hero_pick(matches_odota, heroes, "parental_unit", 2, "lower"),
-  requirement = 11
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "Spider Bitten",
-  description = "Team has at least 2 heroes that are arachnophobic",
-  probability = hero_pick(matches_odota, heroes, "spider_bitten", 2, "lower"),
-  requirement = 15
-)
-bingo_stats <- bingo_stats %>% add_row(
-  card = "Undeadly Duo",
+  square = "Undeadly Duo",
   description = "Team has at least 2 undead heroes",
   probability = hero_pick(matches_odota, heroes, "undeadly_duo", 2, "lower"),
-  requirement = 11
+  requirement = 5
 )
 
 # Calculate rune kills related stats
@@ -284,65 +339,47 @@ rune_kills <- function(matches, rune, threshold) {
   }
   return(calc_exp_summary(results))
 }
-# rune_kills <- function(matches, rune, threshold) {
-#   results <- c()
-#   for (match in matches) {
-#     result <- 0
-#     for (player in match$match$players) {
-#       if (length(player$playbackData$killEvents) > 0) {
-#         kill_events <- bind_rows(player$playbackData$killEvents)
-#         for (rune_event in player$playbackData$runeEvents) {
-#           if (rune_event$rune == rune && rune_event$action == "PICKUP") {
-#             rune_event$start <- rune_event$time
-#             rune_event$duration <- switch (
-#               rune,
-#               "DOUBLE_DAMAGE" = 45,
-#               "ARCANE" = 50,
-#               "HASTE" = 22 + 3*floor((rune_event$time - 360)/720),
-#               "SHIELD" = 75
-#             )
-#             rune_event$end <- rune_event$start + rune_event$duration
-#             kills <- kill_events %>% 
-#               filter(time >= rune_event$start, time <= rune_event$end) %>%
-#               nrow()
-#             if (kills >= threshold) result <- 1
-#           }
-#         }
-#       }
-#     }
-#     results <- c(results, result)
-#   }
-#   return(calc_exp_summary(results))
-# }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Double Down",
+  square = "Double Down",
+  description = "At least 1 kill occurs with an Amplify Damage Rune in a match",
+  probability = rune_kills(matches_stratz, "DOUBLE_DAMAGE", 1),
+  requirement = 27
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Double Down",
   description = "At least 2 kills occur with an Amplify Damage Rune in a match",
   probability = rune_kills(matches_stratz, "DOUBLE_DAMAGE", 2),
-  requirement = 17
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Arcane Ruined",
+  square = "Arcane Ruined",
   description = "At least 2 kills occur with an Arcane Rune in a match",
   probability = rune_kills(matches_stratz, "ARCANE", 2),
-  requirement = 15
+  requirement = 8
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Die On My Shield",
+  square = "Die On My Shield",
   description = "At least 1 kill occurs with a Shield Rune in a match",
   probability = rune_kills(matches_stratz, "SHIELD", 1),
-  requirement = 37
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Die On My Shield",
+  square = "Die On My Shield",
   description = "At least 2 kills occur with a Shield Rune in a match",
   probability = rune_kills(matches_stratz, "SHIELD", 2),
-  requirement = 6
+  requirement = NA
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "The Quick and the Dead",
+  square = "The Quick and the Dead",
+  description = "At least 1 kill occurs with a Haste Rune in a match",
+  probability = rune_kills(matches_stratz, "HASTE", 1),
+  requirement = 16
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "The Quick and the Dead",
   description = "At least 2 kills occur with a Haste Rune in a match",
   probability = rune_kills(matches_stratz, "HASTE", 2),
-  requirement = 6
+  requirement = NA
 )
 
 # Calculate miscellaneous stats
@@ -358,10 +395,10 @@ indestructible <- function(matches) {
   return(calc_exp_summary(results))
 }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Indestructible",
+  square = "Indestructible",
   description = "A winning team has a player with zero deaths",
   probability = indestructible(matches_odota),
-  requirement = 26
+  requirement = NA
 )
 
 peacemaker <- function(matches) {
@@ -376,13 +413,38 @@ peacemaker <- function(matches) {
   return(calc_exp_summary(results))
 }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Peacemaker",
+  square = "Peacemaker",
   description = "A winning team has a player with zero kills",
   probability = peacemaker(matches_odota),
-  requirement = 9
+  requirement = NA
 )
 
-end_a_friend <- function(matches, heroes, threshold) {
+endangered_species <- function(matches, threshold) {
+  results <- c()
+  for (match in matches) {
+    metric <- 0
+    for (player in match$players) {
+      metric <- metric + player$courier_kills
+    }
+    if (metric >= threshold) result <- 1 else result <- 0
+    results <- c(results, result)
+  }
+  return(calc_exp_summary(results))
+}
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Endangered Species",
+  description = "At least 3 couriers die in a match",
+  probability = endangered_species(matches_odota, 3),
+  requirement = 24
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Endangered Species",
+  description = "At least 5 couriers die in a match",
+  probability = endangered_species(matches_odota, 5),
+  requirement = 7
+)
+
+end_a_friend <- function(matches, heroes, threshold = FALSE) {
   results <- c()
   for (match in matches) {
     team_1 <- c()
@@ -408,36 +470,103 @@ end_a_friend <- function(matches, heroes, threshold) {
       }
     }
     
+    if (threshold) {
+      if (metric >= threshold) result <- 1 else result <- 0
+    } else {
+      result <- metric
+    }
+    results <- c(results, metric)
+  }
+  return(calc_exp_summary(results))
+}
+bingo_stats <- bingo_stats %>% add_row(
+  square = "End A Friend",
+  description = "At least 1 hero is denied in a match",
+  probability = end_a_friend(matches_odota, heroes, 1),
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "End A Friend",
+  description = "A hero is denied",
+  probability = end_a_friend(matches_odota, heroes, FALSE),
+  requirement = 15
+)
+
+controlled_demolition <- function(matches, heroes, threshold = FALSE) {
+  results <- c()
+  for (match in matches) {
+    radiant <- c()
+    dire <- c()
+    metric <- 0
+    for (pick in match$picks_bans) {
+      if (pick$is_pick == TRUE) {
+        hero <- heroes %>% filter(hero_id == pick$hero_id) %>% pull(hero_name)
+        if (pick$team == 0) radiant <- c(radiant, hero)
+        if (pick$team == 1) dire <- c(dire, hero)
+      }
+    }
+    
+    for (objective in match$objectives) {
+      if (objective$type == "building_kill") {
+        deny <- (grepl("^npc_dota_goodguys_tower", objective$key) &&
+          objective$unit %in% radiant)
+        if (deny) metric <- metric + 1
+      }
+    }
+    
+    if (threshold) {
+      if (metric >= threshold) result <- 1 else result <- 0
+    } else {
+      result <- metric
+    }
+    results <- c(results, metric)
+  }
+  return(calc_exp_summary(results))
+}
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Controlled Demolition",
+  description = "At least 1 tower is denied in a match",
+  probability = controlled_demolition(matches_odota, heroes, 1),
+  requirement = 11
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Controlled Demolition",
+  description = "A tower is denied",
+  probability = controlled_demolition(matches_odota, heroes, FALSE),
+  requirement = 14
+)
+
+ward_cleaver <- function(matches, threshold) {
+  results <- c()
+  for (match in matches) {
+    metric <- 0
+    for (player in match$players) {
+      if ("npc_dota_observer_wards" %in% names(player$killed)) {
+        metric <- metric + player$killed$npc_dota_observer_wards
+      }
+    }
     if (metric >= threshold) result <- 1 else result <- 0
     results <- c(results, result)
   }
   return(calc_exp_summary(results))
 }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "End A Friend",
-  description = "At least 1 hero is denied in a match",
-  probability = end_a_friend(matches_odota, heroes, 1),
-  requirement = 7
+  square = "Ward Cleaver",
+  description = "At least 25 observer wards dewarded",
+  probability = ward_cleaver(matches_odota, 25),
+  requirement = 25
 )
-
-ward_cleaver <- function(matches) {
-  results <- c()
-  for (match in matches) {
-    result <- 0
-    for (player in match$players) {
-      if ("npc_dota_observer_wards" %in% names(player$killed)) {
-        result <- result + player$killed$npc_dota_observer_wards
-      }
-    }
-    results <- c(results, result)
-  }
-  return(calc_exp_summary(results))
-}
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Ward Cleaver",
+  square = "Ward Cleaver",
   description = "At least 30 observer wards dewarded",
-  probability = ward_cleaver(matches_odota),
-  requirement = 25*30
+  probability = ward_cleaver(matches_odota, 30),
+  requirement = 14
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Ward Cleaver",
+  description = "At least 35 observer wards dewarded",
+  probability = ward_cleaver(matches_odota, 30),
+  requirement = 6
 )
 
 smoking_kills <- function(matches, threshold) {
@@ -455,16 +584,28 @@ smoking_kills <- function(matches, threshold) {
   return(calc_exp_summary(results))
 }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Smoking Kills",
+  square = "Smoking Kills",
   description = "At least 6 kills occur after use of Smoke of Deceit",
   probability = smoking_kills(matches_stratz, 6),
-  requirement = 55
+  requirement = 32
 )
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Smoking Kills",
+  square = "Smoking Kills",
+  description = "At least 8 kills occur after use of Smoke of Deceit",
+  probability = smoking_kills(matches_stratz, 8),
+  requirement = 20
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Smoking Kills",
   description = "At least 9 kills occur after use of Smoke of Deceit",
   probability = smoking_kills(matches_stratz, 9),
-  requirement = 29
+  requirement = 16
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Smoking Kills",
+  description = "At least 10 kills occur after use of Smoke of Deceit",
+  probability = smoking_kills(matches_stratz, 10),
+  requirement = 12
 )
 
 fast_and_furious <- function(matches, duration) {
@@ -476,14 +617,126 @@ fast_and_furious <- function(matches, duration) {
   return(calc_exp_summary(results))
 }
 bingo_stats <- bingo_stats %>% add_row(
-  card = "Fast and Furious",
+  square = "Fast and Furious",
   description = "A match ends in less than 23 minutes",
   probability = fast_and_furious(matches_odota, 23),
-  requirement = 19
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Fast and Furious",
+  description = "A match ends in less than 25 minutes",
+  probability = fast_and_furious(matches_odota, 25),
+  requirement = 12
 )
 
-# Calculate the expectation
-expected_matches <- 68
-bingo_stats <- bingo_stats %>%
-  mutate(expectation = probability * expected_matches, .after = probability) %>%
-  mutate(completion = expectation / requirement)
+firster_first_blood <- function(matches) {
+  results <- c()
+  for (match in matches) {
+    if (match$first_blood_time <= 0) result <- 1 else result <- 0
+    results <- c(results, result)
+  }
+  return(calc_exp_summary(results))
+}
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Firster First Blood",
+  description = "First blood occurs before the horn",
+  probability = firster_first_blood(matches_odota),
+  requirement = 16
+)
+
+fully_sharded <- function(matches) {
+  results <- c()
+  for (match in matches) {
+    result <- 0
+    metric <- c()
+    for (player in match$players) {
+      metric <- c(metric, player$aghanims_shard)
+    }
+    if (sum(metric[1:5]) == 5) result <- result + 1
+    if (sum(metric[6:10]) == 5) result <- result + 1
+    results <- c(results, result)
+  }
+  return(calc_exp_summary(results))
+}
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Fully Sharded",
+  description = "All members of a team have Aghanim's Shards",
+  probability = fully_sharded(matches_odota),
+  requirement = 6
+)
+
+# Unknown stats
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Arbor Ardor",
+  description = "At least 200 trees cut in a match",
+  probability = NA,
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Arbor Ardor",
+  description = "At least 300 trees cut in a match",
+  probability = NA,
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Arbor Ardor",
+  description = "At least 350 trees cut in a match",
+  probability = NA,
+  requirement = NA
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Catch a Fight",
+  description = "At least 3 kills occur after use of a Twin Gate",
+  probability = NA,
+  requirement = 7
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "Fountain Diver",
+  description = "At least 1 player killed in their own fountain",
+  probability = NA,
+  requirement = 15
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "No Rune For You",
+  description = "A rune is denied",
+  probability = NA,
+  requirement = 30
+)
+bingo_stats <- bingo_stats %>% add_row(
+  square = "No Rune For You",
+  description = "At least 2 runes are denied in a match",
+  probability = NA,
+  requirement = 6
+)
+
+# Calculate the expected results
+expected_matches <- 20*2.5
+expected_results <- bingo_stats %>%
+  mutate(
+    expectation = round(probability * expected_matches, 2),
+    probability = round(probability * 100, 2),
+    completion = round((expectation / requirement) * 100, 2)
+  ) %>%
+  select(
+    square, description, probability, expectation, requirement, completion
+  )
+
+# Print the table
+expected_results %>%
+  arrange(square, description) %>%
+  kable(
+    format = "pipe",
+    digits = 2,
+    col.names = c(
+      "Square Name", 
+      "Square Description", 
+      "Prob (%)",
+      "Exp",
+      "Req", 
+      "Comp (%)"
+    ),
+    align = "llrrrr",
+    caption = "The probabilities and expected outcomes for bingo squares"
+  ) %>%
+  gsub("NA", "??", .) %>%
+  print()
