@@ -14,7 +14,7 @@ teams_elim <- scan("data/teams_elim.csv", quiet = TRUE)
 players <- get_player_data(league_id) %>% filter(!(team_id %in% teams_elim))
 teams <- get_team_data(league_id)
 top_players <- scan("data/top_players.csv", quiet = TRUE)
-heroes <- get_hero_data()
+heroes <- get_hero_data("C:/Users/Viren/.conda/envs/dota-compendium/python.exe")
 prefixes <- read_csv("data/prefixes.csv", show_col_types = FALSE)
 
 match_ids <- get_match_ids(league_id)
@@ -90,7 +90,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Balanced",
           cond = player$hero_id %in%
-            (heroes %>% filter(balanced == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(universal == 1) %>% pull(hero_id))
         )
       
       # Bestial
@@ -100,7 +100,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Bestial",
           cond = player$hero_id %in%
-            (heroes %>% filter(bestial == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(horns == 1 | wings == 1) %>% pull(hero_id))
         )
       
       # Brawny
@@ -110,7 +110,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Brawny",
           cond = player$hero_id %in% 
-            (heroes %>% filter(brawny == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(strength == 1) %>% pull(hero_id))
         )
       
       # Canny
@@ -120,7 +120,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Canny",
           cond = player$hero_id %in% 
-            (heroes %>% filter(canny == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(intelligence == 1) %>% pull(hero_id))
         )
       
       # Cerulean
@@ -130,7 +130,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Cerulean",
           cond = player$hero_id %in% 
-            (heroes %>% filter(cerulean == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(blue == 1) %>% pull(hero_id))
         )
       
       # Clutch
@@ -165,7 +165,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Crimson",
           cond = player$hero_id %in% 
-            (heroes %>% filter(crimson == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(red == 1) %>% pull(hero_id))
         )
       
       # Dashing
@@ -175,7 +175,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Dashing",
           cond = player$hero_id %in% 
-            (heroes %>% filter(dashing == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(agility == 1) %>% pull(hero_id))
         )
       
       # Elemental
@@ -185,7 +185,11 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Elemental",
           cond = player$hero_id %in% 
-            (heroes %>% filter(elemental == TRUE) %>% pull(hero_id))
+            (
+              heroes %>% 
+                filter(aquatic == 1 | fiery == 1 | icy == 1) %>% 
+                pull(hero_id)
+            )
         )
       
       # Emerald
@@ -195,7 +199,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Emerald",
           cond = player$hero_id %in% 
-            (heroes %>% filter(emerald == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(green == TRUE) %>% pull(hero_id))
         )
       
       # Glamorous
@@ -233,7 +237,7 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Hirsute",
           cond = player$hero_id %in% 
-            (heroes %>% filter(hirsute == TRUE) %>% pull(hero_id))
+            (heroes %>% filter(bearded == 1 | fuzzy == 1) %>% pull(hero_id))
         )
       
       # Otherworldly
@@ -243,7 +247,10 @@ for (match in matches_odota) {
           !!!base_row,
           prefix_name = "Otherworldly",
           cond = player$hero_id %in% 
-            (heroes %>% filter(otherworldly == TRUE) %>% pull(hero_id))
+            (
+              heroes %>% filter(undead == 1 | demon == 1 | spirit == 1) %>% 
+                pull(hero_id)
+            )
         )
       
       # Sacrificial

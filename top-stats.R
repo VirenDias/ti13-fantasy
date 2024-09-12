@@ -1,6 +1,5 @@
 source("src/get-player-data.R")
 source("src/get-team-data.R")
-source("src/get-hero-data.R")
 source("src/get-match-data.R")
 source("src/calc-exp-summary.R")
 
@@ -13,7 +12,6 @@ league_id <- 16935
 teams_elim <- scan("data/teams_elim.csv", quiet = TRUE)
 players <- get_player_data(league_id) %>% filter(!(team_id %in% teams_elim))
 teams <- get_team_data(league_id)
-heroes <- get_hero_data() %>% select(hero_id, hero_name)
 
 match_ids <- get_match_ids(players$player_id)
 match_ids_black <- scan(
