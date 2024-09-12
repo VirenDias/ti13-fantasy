@@ -1,0 +1,155 @@
+name,desc,average,stddev
+Bloody Standoff,First blood occurs after 6 minutes.,0.03563988360075658,0.1857485816823093
+Firster First Blood,First blood occurs before the horn.,0.068866311972146,0.25371560520519676
+Immortal Heist,Someone snatches the Aegis of the Immortal after their opponents kill Roshan.,NA,NA
+Double Deca,At least 10 double kills in a match.,0.03573101483302323,0.18597712179399264
+Smoking Kills,At least 10 kills occur after use of Smoke of Deceit.,0.28091698901740425,0.45031484493417756
+Double Time,At least 15 double kills in a match.,0,0
+Dairy Delight,At least 1 cheese is eaten in a match.,0.1939594459729891,0.3961609471819834
+Dagon Enthusiast,Dagon Level 5 is purchased in a match.,0.030217421598301136,0.17151560455407228
+Tormented,At least 1 player dies to Tormentor in a match.,0.03228196423064265,0.1770892265292379
+End a Friend,At least 1 hero is denied in a match.,0.017614966923564315,0.1387547184967731
+Fountain Diver,At least 1 player killed in their own fountain.,NA,NA
+Arcane Ruined,At least 1 kill occurs with an Arcane Rune in a match.,0.37111618685276526,0.48403626863883065
+Double Down,At least 1 kill occurs with an Amplify Damage Rune in a match.,0.46248249441931333,0.49955315158195523
+The Quick and the Dead,At least 1 kill occurs with a Haste Rune in a match.,0.30253816624801594,0.46024391598173625
+Die On My Shield,At least 1 kill occurs with a Shield Rune in a match.,0.009762073938194404,0.0985096036492388
+Divine Retribution,A player achieves a Beyond Godlike kill streak in a match.,0.29431204715894904,0.45661283919943374
+Monstrous Mayhem,At least 1 Monster kill streak in a match.,0.5693539785861308,0.4961227553565621
+Divine Intervention,At least 1 Godlike kill streak in a match.,0.4250672287648564,0.495307713516081
+Moonlit,At least 1 player buys a Moon Shard in a match.,0.05371054589927938,0.22588091107338892
+Call It a Rampage,A player gets a Rampage in a match.,0.02266331515534824,0.149115080325833
+Look Sharp,At least 1 Divine Rapier is purchased in a match.,0.04804781781247337,0.21428025197608858
+No Rune For You,At least 1 rune is denied in a match.,NA,NA
+Controlled Demolition,At least 1 tower is denied in a match.,0.13554425475957438,0.35665978756178995
+The Rubber Rule,Someone reflects an ultimate with a Lotus Orb in a match.,NA,NA
+Ultra Cool,At least 1 ultra kill occurs in a match.,0.1787582623116686,0.3838895730310306
+Ward Cleaver,At least 25 observer wards dewarded.,0.9055944586571293,0.2929566556426243
+Dairy Delight,At least 2 cheeses are eaten in a match.,0.06310638651072537,0.2436237048041261
+End a Friend,At least 2 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
+Catch a Fight,At least 2 kills occur after use of a Twin Gate.,NA,NA
+Arcane Ruined,At least 2 kills occur with an Arcane Rune in a match.,0.10182053324321572,0.30299606772052745
+Double Down,At least 2 kills occur with an Amplify Damage Rune in a match.,0.17999338111024563,0.38492373746563135
+The Quick and the Dead,At least 2 kills occur with a Haste Rune in a match.,0.05710973645063436,0.23250023759993735
+Die On My Shield,At least 2 kills occur with a Shield Rune in a match.,0.0055564207924214525,0.0744775506240237
+Divine Retribution,At least 2 Beyond Godlike kill streaks in a match.,0.01009096413461969,0.1001386478736271
+Something Wicked,At least 2 Wicked Sick kill streaks in a match.,0.23895138154664994,0.42726638019017454
+Monstrous Mayhem,At least 2 Monster kill streaks in a match.,0.1050581456688464,0.30722038051219897
+Divine Intervention,At least 2 Godlike kill streaks in a match.,0.03716645951901787,0.18953479454742825
+Solidly Gold,At least 2 Hand of Midases bought in a match.,0.12882125712317058,0.33564883869274353
+No Rune For You,At least 2 runes are denied in a match.,NA,NA
+Controlled Demolition,At least 2 towers are denied in a match.,0.13554425475957438,0.35665978756178995
+The Rubber Rule,At least two ultimates are reflected with a Lotus Orb in a match.,NA,NA
+Ultra Cool,At least 2 ultra kills occurs in a match.,0.01421900201020353,0.11862125826855278
+Ward Cleaver,At least 30 observer wards dewarded.,0.7296454547484643,0.4450005276006022
+Ward Cleaver,At least 35 observer wards dewarded.,0.5248818609489594,0.5003447363484348
+Kingmaker,At least 3 BKBs are purchased in a single match.,0.8045716018128262,0.3972957629763706
+Endangered Species,At least 3 couriers die in a match.,0.477622173744457,0.5004634377469462
+End a Friend,At least 3 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
+Catch a Fight,At least 3 kills occur after use of a Twin Gate.,NA,NA
+Arcane Ruined,At least 3 kills occur with an Arcane Rune in a match.,0.01823064103819447,0.1340427885985704
+Double Down,At least 3 kills occur with an Amplify Damage Rune in a match.,0.06313853958691411,0.24368157921919073
+The Quick and the Dead,At least 3 kills occur with a Haste Rune in a match.,0.025058876149484398,0.15660576204766805
+Die On My Shield,At least 3 kills occur with a Shield Rune in a match.,0,0
+Truly Unstoppable,At least 3 Unstoppable kill streaks in a match.,0.10139147552223603,0.3024292108089168
+Something Wicked,At least 3 Wicked Sick kill streaks in a match.,0.020673471840853754,0.1425634561444931
+Monstrous Mayhem,At least 3 Monster kill streaks in a match.,0.012803007039565698,0.11264078061343341
+Divine Intervention,At least 3 Godlike kill streaks in a match.,0.003718283357903686,0.06098177609977389
+Solidly Gold,At least 3 Hand of Midases bought in a match.,0.049260177946695086,0.21682860617589658
+No Rune For You,At least 3 runes are denied in a match.,NA,NA
+Well Wiped,At least 3 team wipes occur in a match.,0,0
+Controlled Demolition,At least 3 towers are denied in a match.,0.13554425475957438,0.35665978756178995
+Three for Three,At least 3 triple kills in a match.,0.06138442073016543,0.240497578314326
+Ultra Cool,At least 3 ultra kills occurs in a match.,0,0
+End a Friend,At least 4 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
+Catch a Fight,At least 4 kills occur after use of a Twin Gate.,NA,NA
+Mega Mega Kill,At least 4 Mega Kill streaks in a match.,0.11051733268289483,0.3141388790572934
+Truly Unstoppable,At least 4 Unstoppable kill streaks in a match.,0.012233783517053608,0.11014003933306074
+Something Wicked,At least 4 Wicked Sick kill streaks in a match.,0.003966080838722816,0.06297317533878445
+Well Wiped,At least 4 team wipes occur in a match.,0,0
+Quad Trio,At least 4 triple kills in a match.,0.007368512359806588,0.08568833010688019
+Kingmaker,At least 5 BKBs are purchased in a single match.,0.3991985350693126,0.49067926762600317
+Blink and You'll Miss It,At least 5 blink daggers are purchased in a single match.,0.27188697861829675,0.4457910558323212
+Endangered Species,At least 5 couriers die in a match.,0.14537852388207195,0.35316265736552144
+End a Friend,At least 5 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
+Catch a Fight,At least 5 kills occur after use of a Twin Gate.,NA,NA
+Mega Mega Kill,At least 5 Mega Kill streaks in a match.,0.011827490028821669,0.1083179486856463
+Truly Unstoppable,At least 5 Unstoppable kill streaks in a match.,0,0
+Well Wiped,At least 5 team wipes occur in a match.,0,0
+Smoking Kills,At least 6 kills occur after use of Smoke of Deceit.,0.6614981640522126,0.47411378562806156
+Smoking Kills,At least 7 kills occur after use of Smoke of Deceit.,0.5399435589404905,0.4993642960520891
+Smoking Kills,At least 8 kills occur after use of Smoke of Deceit.,0.4588098646469517,0.49926262615565403
+Smoking Kills,At least 9 kills occur after use of Smoke of Deceit.,0.36393299182449523,0.4820586678933364
+Never-Ending Story,A match lasts longer than 50 minutes.,0.1130096995033186,0.3172159696087797
+Never-Ending Story,A match lasts longer than 55 minutes.,0.04598032188489693,0.209846832145071
+Never-Ending Story,A match lasts longer than 60 minutes.,0.026979229396543,0.16233552631913817
+Fast and Furious,A match ends in less than 20 minutes.,0.017580102874137332,0.13167309031323965
+Fast and Furious,A match ends in less than 23 minutes.,0.03166361047590937,0.17544099871196156
+Fast and Furious,A match ends in less than 25 minutes.,0.07383604712393127,0.26200881537936405
+Scepter Squad,All members of a team have Aghanim's Scepter.,0,0
+Fully Sharded,All members of a team have Aghanim's Shards.,0.2817886365724191,0.5176684399711589
+End a Friend,A hero is denied.,0.017614966923564315,0.1387547184967731
+Indestructible,A winning team has a player with zero deaths.,0.3979025442166168,0.4904102079895206
+Peacemaker,A winning team has a player with zero kills.,0.14256915572045725,0.3503080258634797
+Divine Fumble,A players's rapier is taken by the opposing team.,0.0025696239708252523,0.05072403926394472
+No Rune For You,A rune is denied.,NA,NA
+Snout Deficit,A team has at most 2 noses.,0.1462580491067989,0.36415895871695675
+Marine Mayhem,Team has at least 2 aquatic heroes.,0.03972344488402898,0.19568582270559476
+Spider Bitten,Team has at least 2 heroes that are arachnophobic.,0.31615355769404957,0.4886527258830848
+Gruesome Grills,Team has at least 2 heroes with bad teeth.,0.0228349427467154,0.14966549116056332
+Two-Beard,Team has at least 2 heroes with a beard.,0.4486564643461399,0.5741582808699598
+Caped Crew,Team has at least 2 caped heroes.,0.49935634509229776,0.570584454431344
+Huggable Heroes,Team has at least 2 cute heroes.,0.20989446426586808,0.4303248444512791
+Devil's Duo,Team has at least 2 demonic heroes.,0.07318731222668869,0.2609465935210856
+Girl Power,Team has at least 2 female heroes.,0.5858344921428305,0.6332355955104636
+Friendly Fire,Team has at least 2 fiery heroes.,0.2823720610392678,0.4635144032665915
+High Flyers,Team has at least 2 flying heroes.,0.3711718252914416,0.5658569909558664
+Fuzzy Wuzzy,Team has at least 2 fuzzy heroes.,0.25650060762318194,0.4437406835598651
+Lock Horns,Team has at least 2 horned heroes.,0.21393344373719403,0.41853517533304707
+Ice Cold,Team has at least 2 icy heroes.,0.041471429504045344,0.19976287574026308
+Gym Rats,Team has at least 2 heroes that have nice pecs.,0.13337841956539023,0.35116318129948365
+Parental Unit,Team has at least 2 heroes that are parents.,0.1501989160273418,0.3758871804042334
+Portly Party,Team has at least 2 heroes that have a potbelly.,0.013692958496157738,0.11643738953107333
+Kindred Spirits,Team has at least 2 spirit heroes.,0.004329211770990342,0.06578093551682598
+Horse Play,Team has at least 2 heroes with steeds.,0.2641653770268381,0.4749701067638917
+Undeadly Duo,Team has at least 2 undead heroes.,0.03276985153323067,0.1783774276912823
+Flock Jocks,Team has at least 2 heroes with wings.,0.21081829504572994,0.4428825451951014
+Snout Deficit,A team has at most 3 noses.,0.6762089885441135,0.6280685020641309
+Marine Mayhem,Team has at least 3 aquatic heroes.,0.005224917598414999,0.07223370969831398
+Spider Bitten,Team has at least 3 heroes that are arachnophobic.,0.04942153620840244,0.21716501047856043
+Gruesome Grills,Team has at least 3 heroes with bad teeth.,0,0
+Three-Beard,Team has at least 3 heroes with a beard.,0.08564329925827548,0.2803769248404835
+Caped Crew,Team has at least 3 caped heroes.,0.09616776387006354,0.2953904291594093
+Huggable Heroes,Team has at least 3 cute heroes.,0.012260115545489078,0.11025703882275345
+Devil's Trio,Team has at least 3 demonic heroes.,0.0017967640315679778,0.042431927147188596
+Girl Power,Team has at least 3 female heroes.,0.10252027893087386,0.31602967270125926
+Friendly Fire,Team has at least 3 fiery heroes.,0.045036278575182276,0.20778415789048382
+High Flyers,Team has at least 3 flying heroes.,0.05516845593397327,0.22874960565735536
+Fuzzy Wuzzy,Team has at least 3 fuzzy heroes.,0.04951915691899276,0.21736822177206166
+Lock Horns,Team has at least 3 horned heroes.,0.00787771822371957,0.08857691909562768
+Ice Cold,Team has at least 3 icy heroes.,0,0
+Gym Rats,Team has at least 3 heroes that have nice pecs.,0.015585415479159084,0.12410405137790556
+Parental Unit,Team has at least 3 heroes that are parents.,0.00861011376716645,0.09256875750050629
+Portly Party,Team has at least 3 heroes that have a potbelly.,0,0
+Kindred Spirits,Team has at least 3 spirit heroes.,0,0
+Horse Play,Team has at least 3 heroes with steeds.,0.024374934341059754,0.15450799239515398
+Undeadly Trio,Team has at least 3 undead heroes.,0,0
+Flock Jocks,Team has at least 3 heroes with wings.,0.006905600646960481,0.08297241740704582
+Controlled Demolition,A tower is denied.,0.13554425475957438,0.35665978756178995
+Arbor Ardor,At least 100 trees cut in a match.,NA,NA
+Arbor Ardor,At least 200 trees cut in a match.,NA,NA
+Arbor Ardor,At least 300 trees cut in a match.,NA,NA
+Arbor Ardor,At least 350 trees cut in a match.,NA,NA
+Arbor Ardor,At least 400 trees cut in a match.,NA,NA
+Quarter Killer,A player gets 25 kills in a match.,0,0
+Killer Instinct,A player gets 30 kills in a match.,0,0
+Killer Instinct,A player gets 35 kills in a match.,0,0
+Everybody Hates Roshan,Roshan killed 3 times by same team in a match.,0.194338712346992,0.39645477772546717
+Everybody Hates Roshan,Roshan killed 4 times by same team in a match.,0.033529023676749085,0.1803609895703671
+Everybody Hates Roshan,Roshan killed 5 times by same team in a match.,0,0
+Hammer Time,A team purchases at least 2 meteor hammers in a match.,0,0
+Comeback Kings,A team wins while having a net worth deficit.,0.03378836336473273,0.1810328786463194
+No Leg Strategy,A team has at most 5 legs.,0.005194362524740057,0.0720232964210172
+No Leg Strategy,Team has at most 6 legs.,0.06549989859963422,0.2478835674445518
+Legged Legion,A team has at least 14 legs.,0.40784259093376735,0.5720373765455573
+Legged Legion,A team has at least 15 legs.,0.15411687130073098,0.36682669923055966
