@@ -7,7 +7,6 @@ top_stats <- read_csv("results/top_stats.csv")
 top_prefixes <- read_csv("results/top_prefixes.csv")
 top_suffixes <- read_csv("results/top_suffixes.csv")
 
-
 for (role in unique(top_players$player_role)) {
   # Top player tables
   top_players %>%

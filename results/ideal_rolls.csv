@@ -1,81 +1,41 @@
 player_name,team_name,player_role,stat_1,stat_2,stat_3,stat_4,stat_5,prefix,suffix,average,stddev
-Raddan,Team Spirit,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6664.9050271805445,1196.3001831303527
-k1 hector tqmM,HEROIC,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Tormentor Kills,Brawny,of the Octopus,6636.35247271398,1185.0774718736573
-Munkushi~,1w Team,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6628.536047125572,1068.4164598481113
-Saika,BB Team,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Roshan Kills,Dashing,of the Octopus,6505.7903278363,1139.2014995408588
-Oli~,Aurora Gaming,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Emerald,of the Ant,6471.00918452334,1538.1419864955212
-Nisha,Team Liquid,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,6446.64763696919,1462.6415713247704
-23savage,Aurora Gaming,Core,Red - Creep Score,Red - GPM,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6432.688255029347,1118.1617250273296
-No[o]ne-,Cloud9,Mid,Red - GPM,Red - Kills,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,6400.324635057726,1197.350987006908
-医者watson`,Cloud9,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6391.132869083731,974.0830499301975
-Ame,Xtreme Gaming,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6316.477141606046,1025.029987033238
-m1CKe,Team Liquid,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Roshan Kills,Dashing,of the Octopus,6285.00136274057,1269.4922654466245
-Monet,G2 x iG,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Glamorous,of the Octopus,6281.254601563593,1065.094528274074
-Pure,Tundra Esports,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6203.043127308543,928.4570993022495
-skiter,Team Falcons,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6190.108310279078,1108.3142123822188
-Malr1ne,Team Falcons,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,6098.528123045065,976.7253575523282
-NothingToSay,G2 x iG,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,6015.199811625547,1248.6295627206002
-4nalog <01,HEROIC,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Roshan Kills,Otherworldly,of the Octopus,5970.144079386619,1331.0516919176746
-Yuma,nouns,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Virtuoso,of the Octopus,5846.401919503313,923.6421943290603
-YSR-04E,Team Zero,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,5832.9430325281965,944.3396365642988
-RESPECT,1w Team,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Canny,of the Ant,5815.497065343589,1382.343706957342
-lorenof,Aurora Gaming,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,5719.523160439895,979.4534841148707
-Lumpy,beastcoast,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5695.477577318719,1050.498249624993
-Xm,Xtreme Gaming,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5682.443147401302,999.075114876369
-Whitemon,Tundra Esports,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Watchers Taken,Green - Teamfight Participation,Green - Courier Kills,Canny,of the Ant,5676.768042693378,1206.2872846799823
-Larl,Team Spirit,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,5675.421653807743,982.5980207088954
-Quinn,Gaimin Gladiators,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,5666.199120884717,1076.622327572381
-Mikoto,Talon,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,5662.375023464651,1075.9251520102978
-xNova,G2 x iG,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Tormentor Kills,Canny,of the Ant,5631.3008046038985,1474.5346362558607
-Copy,nouns,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5607.479535915925,1053.3692905675323
-Akashi,Talon,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,5595.30441127965,897.9374022428653
-payk,beastcoast,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,5595.107678777417,885.6120469451723
-Save-,BB Team,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Ant,5565.628047493619,1011.8156746851552
-dyrachyo,Gaimin Gladiators,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,5563.737645655507,910.6238315287303
-KingJungles,HEROIC,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Canny,of the Octopus,5551.075545380057,1116.9187871187173
-7eeeeeee,Team Zero,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5527.434947262377,1091.0370657522396
-gpk~,BB Team,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5454.235228106268,983.9122239337304
-CHIRA_JUNIOR,1w Team,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5445.083137802699,1033.190741210375
-Mira,Team Spirit,Support,Blue - Camps Stacked,Blue - Lotuses Grabbed,Blue - Wards Placed,Green - Teamfight Participation,Green - Courier Kills,Emerald,of the Octopus,5388.614832378168,1632.166228625819
-Collapse,Team Spirit,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Brawny,of the Octopus,5370.692623192576,992.1431545855044
-Miposhka,Team Spirit,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Tormentor Kills,Canny,of the Octopus,5345.27572155412,1223.8197654676405
-Insania,Team Liquid,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,5342.618233802686,1102.4804906633142
-DM,Cloud9,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Bestial,of the Octopus,5339.802705729723,1031.0184329917263
-Sneyking,Team Falcons,Support,Blue - Wards Placed,Blue - Lotuses Grabbed,Blue - Watchers Taken,Green - Teamfight Participation,Green - Tormentor Kills,Canny,the Accomplice,5328.060399960802,1217.431923564262
-Fishman,Cloud9,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Canny,of the Ant,5326.5784215135545,1079.3777826651715
-Topson,Tundra Esports,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5278.4942892889485,837.7173055685209
-Cloud,1w Team,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Brawny,of the Octopus,5234.943055313244,919.5003648442673
-Ws`,Talon,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Sacrificial,of the Octopus,5189.706789041375,881.344254400615
-JT-,G2 x iG,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,5187.647789404307,898.1916562746495
-Dy,Xtreme Gaming,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Bestial,the Accomplice,5124.482470035665,1035.7865705958166
-AMMAR_THE_F,Team Falcons,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Courier Kills,Otherworldly,of the Octopus,5102.5773146959855,1189.5953585877824
-Lelis,nouns,Support,Blue - Camps Stacked,Blue - Wards Placed,Blue - Smokes Used,Green - Teamfight Participation,Green - Courier Kills,Canny,of the Octopus,5068.32135769232,1720.252835743197
-MieRo,BB Team,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Virtuoso,of the Octopus,5054.404442974756,926.8177257237895
-Xxs,Xtreme Gaming,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Brawny,of the Octopus,5032.18124987263,734.3462729143993
-Ace ♠,Gaimin Gladiators,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5029.996309283138,870.577908649285
-33,Team Liquid,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Roshan Kills,Virtuoso,of the Octopus,5022.480970695569,1138.2711449364872
-Fly,nouns,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Canny,the Loquacious,5001.71013785861,1344.1469473843536
-Boxi,Team Liquid,Support,Blue - Camps Stacked,Blue - Lotuses Grabbed,Blue - Smokes Used,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,4981.222474230245,1403.2668018184627
-Beyond,Team Zero,Core,Red - Deaths,Red - GPM,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Brawny,of the Octopus,4974.772692299021,766.7281935040807
-RAMZES666,Tundra Esports,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Brawny,of the Octopus,4968.319255807392,703.6318353591199
-Jabz,Aurora Gaming,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Brawny,of the Octopus,4864.575144627146,873.2004489463108
-ponyo,Talon,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Bestial,of the Ant,4770.056883562457,1080.987341405769
-Gunnar,nouns,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Brawny,of the Octopus,4765.758571287694,985.0499717558228
-MoOz,beastcoast,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Canny,of the Ant,4762.7205714862075,933.8082649953363
-Cr1t-,Team Falcons,Support,Blue - Smokes Used,Blue - Camps Stacked,Blue - Wards Placed,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,4736.647110288573,1172.1245037749038
-Vitaly 誇り,beastcoast,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,4657.795049494609,726.5399594629713
-Davai Lama,HEROIC,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Brawny,of the Octopus,4652.039823525496,879.1646641667353
-swedenstrong,1w Team,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Canny,the Loquacious,4642.787067046421,1242.01043597116
-ponlo,Team Zero,Support,Blue - Camps Stacked,Blue - Smokes Used,Blue - Wards Placed,Green - Teamfight Participation,Green - Courier Kills,Emerald,of the Octopus,4592.203264548673,1568.6044999603166
-Kataomi`,Cloud9,Support,Blue - Camps Stacked,Blue - Wards Placed,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Hirsute,of the Octopus,4588.48355899757,1121.0323299653646
-Scofield,HEROIC,Support,Blue - Watchers Taken,Blue - Lotuses Grabbed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Sacrificial,of the Octopus,4352.681078984731,1165.5841248054369
-zzq,Team Zero,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Elemental,the Nothl Pilgrim,4330.333736179426,1072.7905703705983
-Seleri,Gaimin Gladiators,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,4309.209314041722,994.4294861489212
-tOfu,Gaimin Gladiators,Support,Blue - Wards Placed,Blue - Camps Stacked,Blue - Smokes Used,Green - Teamfight Participation,Green - Stuns,Sacrificial,of the Octopus,4275.468858739841,1099.9242909898837
-BoBoKa,G2 x iG,Support,Blue - Camps Stacked,Blue - Runes Grabbed,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Stuns,Dashing,the Nothl Pilgrim,4265.062275397155,1226.523372485226
-TORONTOTOKYO,BB Team,Support,Blue - Wards Placed,Blue - Camps Stacked,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Bestial,the Underdog,4227.683808563534,1064.859232042395
-Jhocam,Talon,Support,Blue - Camps Stacked,Blue - Runes Grabbed,Blue - Smokes Used,Green - Teamfight Participation,Green - Courier Kills,Canny,of the Octopus,4188.59968435516,1446.4388137462943
-XinQ,Xtreme Gaming,Support,Blue - Camps Stacked,Blue - Runes Grabbed,Blue - Smokes Used,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,4128.6872122427885,1071.8150630173018
-9Class,Tundra Esports,Support,Blue - Wards Placed,Blue - Lotuses Grabbed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Cerulean,of the Octopus,3996.9085505479497,1275.597351927334
-Elmisho,beastcoast,Support,Blue - Camps Stacked,Blue - Smokes Used,Blue - Wards Placed,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,3859.3952718901865,996.1808685575774
-Q,Aurora Gaming,Support,Blue - Camps Stacked,Blue - Runes Grabbed,Blue - Wards Placed,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,3599.0311733074773,1099.842627581915
+Saika,BB Team,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6845.071411044732,1089.1717977623393
+Oli~,Aurora Gaming,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Tormentor Kills,Emerald,of the Ant,6637.248735764655,1496.5032001853285
+23savage,Aurora Gaming,Core,Red - Creep Score,Red - GPM,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6553.560734036868,1009.8780418094385
+Pure,Tundra Esports,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Roshan Kills,Dashing,of the Octopus,6535.316026964304,1418.7406807346115
+No[o]ne-,Cloud9,Mid,Red - GPM,Red - Kills,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,6504.561412728478,1169.1980071592752
+医者watson`,Cloud9,Core,Red - GPM,Red - Neutral Tokens Found,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6434.593253558038,956.9418925828111
+m1CKe,Team Liquid,Core,Red - GPM,Red - Creep Score,Red - Neutral Tokens Found,Green - Teamfight Participation,Green - Roshan Kills,Dashing,of the Octopus,6381.081649950059,1259.5203989570148
+Nisha,Team Liquid,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,6374.523119003221,1426.1685388356238
+skiter,Team Falcons,Core,Red - GPM,Red - Creep Score,Red - Tower Kills,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6309.7193726137475,1316.4791067124768
+Ame,Xtreme Gaming,Core,Red - GPM,Red - Creep Score,Red - Deaths,Green - Teamfight Participation,Green - Tormentor Kills,Dashing,of the Octopus,6209.815143495771,1094.8310291639255
+Malr1ne,Team Falcons,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,6206.278810270632,957.2235936520955
+Whitemon,Tundra Esports,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Watchers Taken,Green - Teamfight Participation,Green - Courier Kills,Canny,the Accomplice,5872.035178255562,1271.2969496787803
+lorenof,Aurora Gaming,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5790.459980684005,964.4017826681195
+Quinn,Gaimin Gladiators,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5731.083603013072,1029.7709042128865
+dyrachyo,Gaimin Gladiators,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Glamorous,of the Octopus,5657.40114045214,930.5590654504787
+gpk~,BB Team,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5563.872653214402,941.2937449733947
+Sneyking,Team Falcons,Support,Blue - Wards Placed,Blue - Lotuses Grabbed,Blue - Watchers Taken,Green - Teamfight Participation,Green - Tormentor Kills,Elemental,the Accomplice,5561.156924335486,1271.8569193886187
+Save-,BB Team,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Virtuoso,of the Octopus,5532.765227381349,1095.5380704726847
+Xm,Xtreme Gaming,Mid,Red - GPM,Red - Deaths,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5516.584672109452,965.9868519042482
+DM,Cloud9,Core,Red - Deaths,Red - GPM,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Bestial,of the Octopus,5436.931943281986,988.1766183624555
+Fishman,Cloud9,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Canny,the Nothl Pilgrim,5407.030976874262,1032.1610660429644
+Topson,Tundra Esports,Mid,Red - GPM,Red - Creep Score,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Coveted,of the Octopus,5295.972069234356,876.7333437999753
+AMMAR_THE_F,Team Falcons,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Courier Kills,Otherworldly,of the Octopus,5278.185898529571,1145.1802366840093
+MieRo,BB Team,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Virtuoso,of the Octopus,5265.956720792478,911.2250771423891
+Insania,Team Liquid,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,5133.0864194915885,1076.8857686916344
+Ace ♠,Gaimin Gladiators,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Otherworldly,of the Octopus,5132.208909251767,833.177498458308
+RAMZES666,Tundra Esports,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Brawny,of the Octopus,5104.521171838838,732.7589075474177
+Boxi,Team Liquid,Support,Blue - Camps Stacked,Blue - Lotuses Grabbed,Blue - Smokes Used,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,5034.48439028322,1408.9853072016338
+33,Team Liquid,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Virtuoso,of the Octopus,5005.358574679151,890.1683194913946
+Xxs,Xtreme Gaming,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Stuns,Bestial,of the Octopus,4982.363123691427,746.8558392771782
+Dy,Xtreme Gaming,Support,Blue - Wards Placed,Blue - Smokes Used,Blue - Watchers Taken,Green - Teamfight Participation,Green - Tormentor Kills,Bestial,the Accomplice,4960.506897048268,999.3436329931151
+Jabz,Aurora Gaming,Core,Red - GPM,Red - Deaths,Red - Creep Score,Green - Teamfight Participation,Green - Tormentor Kills,Hirsute,of the Octopus,4924.931997788235,806.0961057926943
+Cr1t-,Team Falcons,Support,Blue - Smokes Used,Blue - Camps Stacked,Blue - Wards Placed,Green - Teamfight Participation,Green - Stuns,Emerald,of the Octopus,4778.25933297321,1151.7095474249327
+Kataomi`,Cloud9,Support,Blue - Camps Stacked,Blue - Wards Placed,Blue - Lotuses Grabbed,Green - Teamfight Participation,Green - Stuns,Hirsute,of the Octopus,4541.602803209445,1280.3071193860937
+TORONTOTOKYO,BB Team,Support,Blue - Wards Placed,Blue - Camps Stacked,Blue - Smokes Used,Green - Teamfight Participation,Green - Tormentor Kills,Canny,of the Octopus,4359.47632157232,1062.0823849354624
+Seleri,Gaimin Gladiators,Support,Blue - Smokes Used,Blue - Wards Placed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Stuns,Canny,of the Octopus,4253.734304611781,952.5802822918616
+tOfu,Gaimin Gladiators,Support,Blue - Wards Placed,Blue - Camps Stacked,Blue - Smokes Used,Green - Teamfight Participation,Green - Stuns,Dashing,of the Octopus,4147.139988162938,1100.9814958896077
+XinQ,Xtreme Gaming,Support,Blue - Smokes Used,Blue - Runes Grabbed,Blue - Camps Stacked,Green - Teamfight Participation,Green - Courier Kills,Emerald,of the Octopus,4045.434470711383,1156.3049579487254
+9Class,Tundra Esports,Support,Blue - Wards Placed,Blue - Lotuses Grabbed,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Cerulean,of the Octopus,3997.7828259773287,1179.4116973868488
+Q,Aurora Gaming,Support,Blue - Camps Stacked,Blue - Wards Placed,Blue - Runes Grabbed,Green - Teamfight Participation,Green - Stuns,Hirsute,of the Octopus,3690.8811406489094,1086.9794284232282
