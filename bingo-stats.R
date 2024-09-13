@@ -31,8 +31,8 @@ bingo_stats <- bingo_squares %>%
   mutate(average = as.numeric(NA), stddev = as.numeric(NA))
 
 progress <- progress_bar$new(
-  format = "(:spin) [:bar] :percent | ETA:eta",
-  total = length(match_ids),
+  format = "(:spin) [:bar] :percent | ETA: eta",
+  total = 137,
   complete = "=",
   incomplete = "-",
   current = ">",
@@ -71,6 +71,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Divine Intervention",
@@ -79,6 +80,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Divine Intervention",
@@ -87,6 +89,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Divine Retribution",
@@ -95,6 +98,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Divine Retribution",
@@ -103,6 +107,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Mega Mega Kill",
@@ -111,6 +116,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Mega Mega Kill",
@@ -119,6 +125,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Monstrous Mayhem",
@@ -127,6 +134,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Monstrous Mayhem",
@@ -135,6 +143,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Monstrous Mayhem",
@@ -143,6 +152,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Something Wicked",
@@ -151,6 +161,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Something Wicked",
@@ -159,6 +170,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Something Wicked",
@@ -167,6 +179,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Truly Unstoppable",
@@ -175,6 +188,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Truly Unstoppable",
@@ -183,6 +197,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Truly Unstoppable",
@@ -191,6 +206,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Multi kill stats
 multi_kill <- function(matches, multi, threshold) {
@@ -224,6 +240,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Double Time",
@@ -232,6 +249,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Call It a Rampage",
@@ -240,6 +258,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Quad Trio",
@@ -248,6 +267,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Three for Three",
@@ -256,6 +276,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ultra Cool",
@@ -264,6 +285,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ultra Cool",
@@ -272,6 +294,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ultra Cool",
@@ -280,6 +303,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Item purchase stats
 item_purchase <- function(matches, item, threshold, team = FALSE) {
@@ -320,6 +344,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Dagon Enthusiast",
@@ -328,6 +353,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Hammer Time",
@@ -336,6 +362,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Kingmaker",
@@ -344,6 +371,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Kingmaker",
@@ -352,6 +380,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Look Sharp",
@@ -360,6 +389,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Moonlit",
@@ -368,6 +398,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Solidly Gold",
@@ -376,6 +407,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Solidly Gold",
@@ -384,6 +416,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Hero pick stats
 hero_pick <- function(matches, heroes, category, threshold, boundary) {
@@ -435,6 +468,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Caped Crew",
@@ -443,6 +477,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Devil's Duo",
@@ -451,6 +486,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Devil's Trio",
@@ -459,6 +495,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Flock Jocks",
@@ -467,6 +504,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Flock Jocks",
@@ -475,6 +513,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Friendly Fire",
@@ -483,6 +522,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Friendly Fire",
@@ -491,6 +531,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Fuzzy Wuzzy",
@@ -499,6 +540,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Fuzzy Wuzzy",
@@ -507,6 +549,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Girl Power",
@@ -515,6 +558,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Girl Power",
@@ -523,6 +567,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Gruesome Grills",
@@ -531,6 +576,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Gruesome Grills",
@@ -539,6 +585,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Gym Rats",
@@ -547,6 +594,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Gym Rats",
@@ -555,6 +603,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "High Flyers",
@@ -563,6 +612,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "High Flyers",
@@ -571,6 +621,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Horse Play",
@@ -579,6 +630,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Horse Play",
@@ -587,6 +639,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Huggable Heroes",
@@ -595,6 +648,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Huggable Heroes",
@@ -603,6 +657,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ice Cold",
@@ -611,6 +666,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ice Cold",
@@ -619,6 +675,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Kindred Spirits",
@@ -627,6 +684,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Kindred Spirits",
@@ -635,6 +693,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Legged Legion",
@@ -643,6 +702,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Legged Legion",
@@ -651,6 +711,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Lock Horns",
@@ -659,6 +720,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Lock Horns",
@@ -667,6 +729,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Marine Mayhem",
@@ -675,6 +738,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Marine Mayhem",
@@ -683,6 +747,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "No Leg Strategy",
@@ -691,6 +756,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "No Leg Strategy",
@@ -699,6 +765,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Parental Unit",
@@ -707,6 +774,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Parental Unit",
@@ -715,6 +783,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Portly Party",
@@ -723,6 +792,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Portly Party",
@@ -731,6 +801,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Snout Deficit",
@@ -739,6 +810,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Snout Deficit",
@@ -747,6 +819,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Spider Bitten",
@@ -755,6 +828,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Spider Bitten",
@@ -763,6 +837,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Three-Beard",
@@ -771,6 +846,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Two-Beard",
@@ -779,6 +855,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Undeadly Duo",
@@ -787,6 +864,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Undeadly Trio",
@@ -795,6 +873,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Rune kill stats
 rune_kills <- function(matches, rune, threshold) {
@@ -834,6 +913,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Arcane Ruined",
@@ -842,6 +922,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Arcane Ruined",
@@ -850,6 +931,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Die On My Shield",
@@ -858,6 +940,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Die On My Shield",
@@ -866,6 +949,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Die On My Shield",
@@ -874,6 +958,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Double Down",
@@ -882,6 +967,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Double Down",
@@ -890,6 +976,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Double Down",
@@ -898,6 +985,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "The Quick and the Dead",
@@ -906,6 +994,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "The Quick and the Dead",
@@ -914,6 +1003,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "The Quick and the Dead",
@@ -922,6 +1012,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Hero deny stats
 hero_deny <- function(matches, heroes, threshold = FALSE) {
@@ -973,6 +1064,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "End a Friend",
@@ -981,6 +1073,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "End a Friend",
@@ -989,6 +1082,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "End a Friend",
@@ -997,6 +1091,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "End a Friend",
@@ -1005,6 +1100,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "End a Friend",
@@ -1013,6 +1109,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Tower deny stats
 tower_deny <- function(matches, heroes, threshold = FALSE) {
@@ -1060,6 +1157,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Controlled Demolition",
@@ -1068,6 +1166,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Controlled Demolition",
@@ -1076,6 +1175,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Controlled Demolition",
@@ -1084,6 +1184,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Match duration stats
 match_duration <- function(matches, threshold, boundary) {
@@ -1114,6 +1215,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Fast and Furious",
@@ -1122,6 +1224,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Fast and Furious",
@@ -1130,6 +1233,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Never-Ending Story",
@@ -1138,6 +1242,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Never-Ending Story",
@@ -1146,6 +1251,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Never-Ending Story",
@@ -1154,6 +1260,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Smoke kill stats
 smoke_kill <- function(matches, threshold) {
@@ -1184,6 +1291,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Smoking Kills",
@@ -1192,6 +1300,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Smoking Kills",
@@ -1200,6 +1309,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Smoking Kills",
@@ -1208,6 +1318,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Smoking Kills",
@@ -1216,6 +1327,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Courier kill stats
 courier_kill <- function(matches, threshold) {
@@ -1244,6 +1356,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Endangered Species",
@@ -1252,6 +1365,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## First blood stats
 first_blood <- function(matches, threshold, boundary) {
@@ -1282,6 +1396,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Firster First Blood",
@@ -1290,6 +1405,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Player kill stats
 player_kill <- function(matches, threshold) {
@@ -1317,6 +1433,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Killer Instinct",
@@ -1325,6 +1442,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Killer Instinct",
@@ -1333,6 +1451,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Roshan kill stats
 roshan_kill <- function(matches, threshold) {
@@ -1367,6 +1486,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Everybody Hates Roshan",
@@ -1375,6 +1495,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Everybody Hates Roshan",
@@ -1383,16 +1504,16 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Ward kill stats
+## Measures observer and sentry dewards
 ward_kill <- function(matches, threshold) {
   results <- c()
   for (match in matches) {
     metric <- 0
     for (player in match$players) {
-      # Bugged: Apparently measures wards placed instead
-      # metric <- metric + player$observer_kills
-      metric <- metric + player$observers_placed
+      metric <- metric + player$observer_kills + player$sentry_kills
     }
     if (metric >= threshold) result <- 1 else result <- 0
     results <- c(results, result)
@@ -1413,6 +1534,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ward Cleaver",
@@ -1421,6 +1543,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Ward Cleaver",
@@ -1429,6 +1552,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Cheese use stats
 cheese_use <- function(matches, threshold) {
@@ -1459,6 +1583,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Dairy Delight",
@@ -1467,6 +1592,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Team wipe stats
 team_wipe <- function(matches, threshold) {
@@ -1500,6 +1626,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Well Wiped",
@@ -1508,6 +1635,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 bingo_stats <- bingo_stats %>% rows_update(
   tibble(
     name = "Well Wiped",
@@ -1516,6 +1644,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 ## Miscellaneous stats
 indestructible <- function(matches) {
@@ -1542,6 +1671,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 peacemaker <- function(matches) {
   results <- c()
@@ -1567,6 +1697,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 fully_sharded <- function(matches) {
   results <- c()
@@ -1595,6 +1726,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 scepter_squad <- function(matches) {
   results <- c()
@@ -1627,6 +1759,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 tormented <- function(matches) {
   results <- c()
@@ -1652,6 +1785,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 comeback_kings <- function(matches) {
   results <- c()
@@ -1678,6 +1812,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 divine_fumble <- function(matches) {
   results <- c()
@@ -1708,6 +1843,7 @@ bingo_stats <- bingo_stats %>% rows_update(
   ),
   by = c("name", "desc")
 )
+progress$tick()
 
 # Save the data to disk
 bingo_stats %>%

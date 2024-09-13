@@ -35,7 +35,7 @@ suffix_incids <- data.frame(
 )
 
 progress <- progress_bar$new(
-  format = "(:spin) [:bar] :percent | ETA:eta",
+  format = "(:spin) [:bar] :percent | ETA: eta",
   total = length(match_ids),
   complete = "=",
   incomplete = "-",
@@ -273,7 +273,7 @@ for (match in matches_odota) {
 }
 
 progress <- progress_bar$new(
-  format = "(:spin) [:bar] :percent | ETA:eta",
+  format = "(:spin) [:bar] :percent | ETA: eta",
   total = length(match_ids),
   complete = "=",
   incomplete = "-",

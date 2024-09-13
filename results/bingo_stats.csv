@@ -24,7 +24,7 @@ No Rune For You,At least 1 rune is denied in a match.,NA,NA
 Controlled Demolition,At least 1 tower is denied in a match.,0.13554425475957438,0.35665978756178995
 The Rubber Rule,Someone reflects an ultimate with a Lotus Orb in a match.,NA,NA
 Ultra Cool,At least 1 ultra kill occurs in a match.,0.1787582623116686,0.3838895730310306
-Ward Cleaver,At least 25 observer wards dewarded.,0.9055944586571293,0.2929566556426243
+Ward Cleaver,At least 25 observer wards dewarded.,0.5993999788704713,0.4909661981937181
 Dairy Delight,At least 2 cheeses are eaten in a match.,0.06310638651072537,0.2436237048041261
 End a Friend,At least 2 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
 Catch a Fight,At least 2 kills occur after use of a Twin Gate.,NA,NA
@@ -41,8 +41,8 @@ No Rune For You,At least 2 runes are denied in a match.,NA,NA
 Controlled Demolition,At least 2 towers are denied in a match.,0.13554425475957438,0.35665978756178995
 The Rubber Rule,At least two ultimates are reflected with a Lotus Orb in a match.,NA,NA
 Ultra Cool,At least 2 ultra kills occurs in a match.,0.01421900201020353,0.11862125826855278
-Ward Cleaver,At least 30 observer wards dewarded.,0.7296454547484643,0.4450005276006022
-Ward Cleaver,At least 35 observer wards dewarded.,0.5248818609489594,0.5003447363484348
+Ward Cleaver,At least 30 observer wards dewarded.,0.3939817605139725,0.4895743471431904
+Ward Cleaver,At least 35 observer wards dewarded.,0.24500346676469203,0.43091969224267135
 Kingmaker,At least 3 BKBs are purchased in a single match.,0.8045716018128262,0.3972957629763706
 Endangered Species,At least 3 couriers die in a match.,0.477622173744457,0.5004634377469462
 End a Friend,At least 3 heroes are denied in a match.,0.017614966923564315,0.1387547184967731
