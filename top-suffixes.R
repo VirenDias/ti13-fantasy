@@ -196,10 +196,7 @@ for (match in matches_odota) {
             player$item_3,
             player$item_4,
             player$item_5,
-            player$item_neutral,
-            player$backpack_0,
-            player$backpack_1,
-            player$backpack_2
+            player$item_neutral
           ) %in%
             (items %>% filter(has_active == TRUE) %>% pull(item_id)) %>%
             sum() >= 4

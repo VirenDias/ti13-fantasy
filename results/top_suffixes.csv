@@ -1,5 +1,5 @@
 player_role,suffix_name,suffix_desc,all_player_prob,all_player_bonus,top_player_prob,top_player_bonus
-Core,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.7681323578121143,7.681323578121143,0.7128121329908761,7.128121329908761
+Core,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.72182588503642,7.2182588503642,0.6452920380800565,6.452920380800565
 Core,the Underdog,+8% in games where the player loses,0.39923981193573854,3.1939184954859083,0.43298683657414294,3.4638946925931435
 Core,the Loquacious,+16% in games where the player uses the most voice lines,0.09322558826820203,1.4916094122912325,0.20251731221555644,3.240276995448903
 Core,the Decisive,+21% in games that last less than 25 minutes,0.07156584126588784,1.5028826665836448,0.0585428478835662,1.2293998055548903
@@ -15,7 +15,7 @@ Core,the Even-Keeled,+25% in games where the player is tipped 5 or more times,0.
 Core,of the Raven,+23% if any player gets a rampage,0.027320853363372217,0.628379627357561,0.010850331979685435,0.249557635532765
 Core,of the Ant,+17% in games where the player has the lowest networth,0,0,0,0
 Core,the Patient,+22% if first blood does not happen until after 10 minutes,0,0,0,0
-Mid,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.8051584538816757,8.051584538816757,0.857401237954232,8.574012379542319
+Mid,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.6435412200282873,6.435412200282872,0.7047880735100972,7.047880735100972
 Mid,the Underdog,+8% in games where the player loses,0.3991369689192273,3.1930957513538183,0.33884315344094496,2.7107452275275596
 Mid,of the Mule,+24% in games where the player ends the game with items in every slot of their inventory and backpack,0.04894610351577364,1.1747064843785673,0.10996685354356084,2.63920448504546
 Mid,the Decisive,+21% in games that last less than 25 minutes,0.0715960223947937,1.5035164702906678,0.11401509646564756,2.394317025778599
@@ -34,7 +34,7 @@ Mid,the Patient,+22% if first blood does not happen until after 10 minutes,0,0,0
 Support,of the Ant,+17% in games where the player has the lowest networth,0.20850586628685577,3.544599726876548,0.3705402002969705,6.299183405048498
 Support,the Accomplice,+16% in games where the player has the most assists,0.25266227690224086,4.042596430435854,0.2977183133125815,4.763493013001304
 Support,the Nothl Pilgrim,+15% if the player has the most deaths in the game,0.1816207289614244,2.724310934421366,0.25083816104771406,3.7625724157157108
-Support,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.5120135269188686,5.120135269188686,0.3673155370641575,3.6731553706415747
+Support,of the Octopus,+10% in games where the player ends the game with 4 or more items that have an active ability,0.4745661257565456,4.745661257565456,0.3495681805728793,3.4956818057287933
 Support,the Underdog,+8% in games where the player loses,0.4030905569169705,3.224724455335764,0.38675914879298123,3.09407319034385
 Support,the Pacifist,+18% if the player ends the game with no kills,0.11922562701662805,2.1460612862993047,0.13518110342066544,2.433259861571978
 Support,of the Bull,+21% in games where the player buys back before 30 minutes,0.08083585717187977,1.6975530006094752,0.10086556095493909,2.118176780053721
